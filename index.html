@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="titulo">
+            <h1>Lista de contatos</h1>
+        </div>
+
+        <div class="caixa-texto">
+            <input type="text" id="nomeContato" placeholder="Nome do contato">
+            <input type="text" id="numeroContato" placeholder="Número do contato">
+            <button type="button" id="btnAdicionar" class="btn btn-success">Adicionar</button>
+        </div>
+        
+        <table id="tabelaContatos" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome do Contato</th>
+                    <th>Número do Contato</th>
+                    <th></th> <!-- Coluna para o botão de deletar -->
+                </tr>
+            </thead>
+            <tbody id="tabelaContatosBody"></tbody>
+        </table>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
