@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const inputNomeContato = document.getElementById("nomeContato");
     const inputNumeroContato = document.getElementById("numeroContato");
     const tabelaContatosBody = document.getElementById("tabelaContatosBody");
+    let contatoIndex = 1;
 
     btnAdicionar.addEventListener("click", function() {
         const nome = inputNomeContato.value.trim();
@@ -24,7 +25,19 @@ document.addEventListener("DOMContentLoaded", function() {
         const cellNumero = newRow.insertCell(2);
         const cellDelete = newRow.insertCell(3);
 
+        cellIndex.textContent = contatoIndex;
         cellNome.textContent = nome;
         cellNumero.textContent = numero;
+
+        contatoIndex++;
     }
 });
+
+
+
+
+
+
+
+
+
